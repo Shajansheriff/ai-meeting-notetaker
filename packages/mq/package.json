@@ -1,0 +1,19 @@
+{
+    "name": "@repo/mq",
+    "private": true,
+    "type": "module",
+    "exports": {
+        ".": "./src/index.ts"
+    },
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "check-types": "turbo run check-types"
+    },
+    "dependencies": {
+        "bullmq": "^5.78.0",
+        "ioredis": "^5.10.1"
+    }
+}
